@@ -1,0 +1,21 @@
+React Hooks (Custom hook)
+useMemo
+useCallback
+axios
+
+---
+react-query
+recoil
+
+SSR
+
+
+JS
+Closure
+Event loop
+
+
+1. 뭔지 알면 됨 (개념, 어디다 쓰는지)
+2. 기본 사용법 (메인 기능, 직접 해보기)
+3. 바꾸고 싶은 기능들, 추가적인 기능들
+4. 프로젝트에 쓰는거

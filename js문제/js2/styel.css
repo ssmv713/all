@@ -1,0 +1,16 @@
+.clicks {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.login_container {
+  display: flex;
+}
+.term_top {
+  display: flex;
+}
+.info_box {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}

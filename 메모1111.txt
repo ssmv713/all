@@ -1,0 +1,285 @@
+  <Chart
+          series={[
+            {
+              name: "Desktops",
+              data: [ 
+                {
+                  x: new Date(2018, 1, 1),
+                  y: [0.5],
+                },
+                {
+                  x: new Date(2018, 2, 2),
+                  y: [0.5],
+                },
+                {
+                  x: new Date(2018, 3, 2),
+                  y: [0.8],
+                },
+                {
+                  x: new Date(2018, 4, 1),
+                  y: [0.2],
+                },
+                {
+                  x: new Date(2018, 5, 2),
+                  y: [0.2],
+                },
+                {
+                  x: new Date(2018, 6, 2),
+                  y: [0.4],
+                },
+                {
+                  x: new Date(2018, 7, 1),
+                  y: [0.1],
+                },
+                {
+                  x: new Date(2018, 8, 2),
+                  y: [0.9],
+                },
+                {
+                  x: new Date(2018, 9, 2),
+                  y: [0.5],
+                },
+
+                {
+                  x: new Date(2018, 10, 2),
+                  y: [1],
+                },
+                {
+                  x: new Date(2018, 11, 2),
+                  y: [1.1],
+                },
+                {
+                  x: new Date(2018, 12, 2),
+                  y: [1.8],
+                },
+                ////
+                {
+                  x: new Date(2019, 1, 1),
+                  y: [2],
+                },
+                {
+                  x: new Date(2019, 2, 2),
+                  y: [2.3],
+                },
+                {
+                  x: new Date(2019, 3, 2),
+                  y: [1.7],
+                },
+                {
+                  x: new Date(2019, 4, 1),
+                  y: [1.9],
+                },
+                {
+                  x: new Date(2019, 5, 2),
+                  y: [3.3]
+                },
+                {
+                  x: new Date(2019, 6, 2),
+                  y: [3.2]
+                },
+                {
+                  x: new Date(2019, 7, 1),
+                  y: [3.9]
+                },
+                {
+                  x: new Date(2019, 8, 2),
+                  y: [3.7]
+                },
+                {
+                  x: new Date(2019, 9, 2),
+                  y: [3.8,]
+                },
+
+                {
+                  x: new Date(2019, 10, 2),
+                  y: [3.4,]
+                },
+                {
+                  x: new Date(2019, 11, 2),
+                  y: [4.5,]
+                },
+                {
+                  x: new Date(2019, 12, 2),
+                  y: [4.3,],
+                },
+                {
+                  x: new Date(2020, 1, 2),
+                  y: [4.8,],
+                },
+
+                {
+                  x: new Date(2020, 2, 2),
+                  y: [4.8,],
+                },
+                {
+                  x: new Date(2020, 3, 2),
+                  y: [4.1,],
+                },
+                {
+                  x: new Date(2020, 4, 2),
+                  y: [4.5,],
+                },
+              ],
+            },
+          ]}
+          options={{
+            chart: {
+              toolbar: {
+                show: false,
+              },
+            },
+            stroke: {
+              width: 2,
+            },
+            fill: {
+              type: "gradient",
+              gradient: {
+                shadeIntensity: 1,
+                inverseColors: false,
+                opacityFrom: 0.5,
+                opacityTo: 0,
+                stops: [0, 90, 100],
+              },
+            },
+            colors: ["#B11F1F"],
+            dataLabels: {
+              enabled: false,
+            },
+            title: {
+              align: "left",
+            },
+            xaxis: {
+              type: "datetime",
+            },
+            yaxis: {
+              tooltip: {
+                enabled: false,
+              },
+            },
+          }}
+          type="area"
+          height={150}
+          width={350}
+        />
+
+
+////////////////////////////////////////////////////
+
+     var options = {
+			series: [
+				{
+					name: "Serie 1",
+					type: "line",
+					data: [10,12,14,15,16]
+				},
+				{
+					name: "Serie 2",
+					type: "line",
+					data: [0.3,0.4,0.6,0.7,0.4]
+				},
+				{
+					name: "Serie 3",
+					type: "line",
+					data: [131,127,150,129,144]
+				}
+			],
+			chart: {
+				height: 350,
+				type: "line",
+				stacked: false
+			},
+			dataLabels: {
+				enabled: false
+			},
+			stroke: {
+				width: 2
+			},
+			xaxis: {
+				categories: [2009, 2010, 2011, 2012, 2013]
+			},
+			yaxis: [
+				{
+					seriesName: "Serie 1",
+          min:0,
+          max:200,
+					axisTicks: {
+						show: true
+					},
+					axisBorder: {
+						show: true,
+						color: "#008FFB"
+					},
+					labels: {
+						style: {
+							colors: ["#008FFB"]
+						}
+					},
+					title: {
+						text: "Axe 1",
+						style: {
+							color: "#008FFB"
+						}
+					},
+					tooltip: {
+						enabled: true
+					}
+				},
+				{
+					seriesName: "Serie 2",
+					opposite: true,
+					min: 0,
+					max: 1,
+					axisTicks: {
+						show: true
+					},
+					axisBorder: {
+						show: true,
+						color: "#FEB019"
+					},
+					labels: {
+						style: {
+							colors: ["#FEB019"]
+						}
+					},
+					title: {
+						text: "Axe 2",
+						style: {
+							color: "#FEB019"
+						}
+					},
+					tooltip: {
+						enabled: true
+					}
+				},
+				{
+					seriesName: "Serie 3",
+					min: 0,
+					max: 200,
+					axisTicks: {
+						show: true,
+					},
+					axisBorder: {
+						show: false
+					},
+					labels: {
+						show:false,
+					},
+					title: {
+						text: "",
+					},
+					tooltip: {
+						enabled: false
+					}
+				}
+			],
+			legend: {
+				horizontalAlign: "left",
+				offsetX: 40
+			}
+		};
+
+     var chart = new ApexCharts(document.querySelector("#chart"), options);
+     chart.render();
+
+
+

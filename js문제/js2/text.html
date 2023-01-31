@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <input type="button" id="button1"  onclick="button1_click();" value="5" />
+  <body>
+    <script>
+      let customers = [
+        {
+          name: "ABC Inc",
+          credit: true,
+        },
+        {
+          name: "ACME Corp",
+          credit: 200,
+        },
+        {
+          name: "IoT AG",
+          credit: true,
+        },
+      ];
+
+      const trueplace = customers.find((c) => c.credit == true);
+    
+   
+      if(trueplace == true){
+        console.log(2)
+      }
+
+      
+      const inventory = [
+    {name: 'cherries', quantity: 2},
+    {name: 'bananas', quantity: 0},
+    {name: 'cherries', quantity: 5}
+];
+
+const result = inventory.find(fruit => fruit.quantity === 'cherries');
+
+console.log(result)
+
+    </script>
+  </body>
+</html>

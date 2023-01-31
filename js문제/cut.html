@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      const box = document.querySelector(".box");
+      //   const arr5 = [
+      //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      //     "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+      //     "when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      //     "It has survived not only five centuries,",
+      //   ];
+
+      const arr5 = [
+        {
+          id: 1,
+          title: "[단독]한동훈 법무부, 외국인 투표권 상호주의 원상복구 어찌고",
+        },
+        {
+          id: 2,
+          title:
+            "하이브 뒤쫓는 SM.JYP 연합...팬덤 사로잡을수 있을까요 없을까요",
+        },
+        {
+          id: 3,
+          title: '케이프투자증권 "삼성 SDS, 실적 개선 예상을 하십니까',
+        },
+        {
+          id: 4,
+          title: '케이프투자증권 "삼성 SDS, 실적 개선 예상을 하십니까',
+        },
+      ];
+
+      //   arr5.forEach((element) => {
+      //     const result = element.substring(0, 50);
+      //     if (element.length > 50) {
+      //       box.innerHTML += `
+      //       <p> ${result}... </p>
+
+      // `;
+      //     }
+      //   });
+
+      arr5.forEach((element) => {
+        const result = element.title.substring(0, 24);
+
+        if (element.title.length > 19) {
+          box.innerHTML += `
+          <p> ${result}... </p>
+           
+    `;
+        }
+      });
+    </script>
+  </body>
+</html>

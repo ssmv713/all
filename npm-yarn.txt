@@ -1,0 +1,23 @@
+npm <-> yarn
+npm : 원래 노드에서 주는 프로그램 (npm install)
+yarn : npm 보다 조금 빠름 (yarn add)
+
+mui (리액트의 부트스트랩)
+설치는 yarn add 로 했고
+
+mui에서 원하는 컴포넌트 찾기
+mui > Get Started > Components 에 들어온다
+원하는걸 영어로 찾아서 들어간다 (Button)
+
+원하는 디자인을 찾으면 코드를 본다
+태그를 복붙한다 (무조건 js 코드로)
+에러 뜨면 뭐가 없는지 보고 컨트롤 스페이스로 import 한다
+
+만약 ToggleButton처럼 state 관리가 필요하면
+예시 코드 따라서 useState 만들면 된다 (useState는 반드시 import)
+useState 에는 string, bool, int 등 다양한 타입이 들어올 수 있다
+
+만약 컴포넌트를 커스텀 하고 싶으면 props 옵션을 보거나
+화면 맨 아래 API 를 들어가서 Props 표 목록 보고 한글 돌려서 보고 영어 복붙한다
+
+만약 컴파일 오래걸리면 컨트롤 C눌러서 나왔다가 다시 yarn start 하면 된다

@@ -1,0 +1,60 @@
+axios
+ .get ("~~")
+ .then(setPageData)
+ .catch((e) => console.erroer(e));
+//////////////////////////
+feat: 기능 추가
+add : 파일 추가
+fix : 오류 수정
+refactor: 코드 정리
+update : 기능 업데이트
+//////////////////////////////////
+GitFlow
+
+Branch (가지치기)
+- main (가장 상위)
+  - release : 실서버에 배포 전용
+  - feature : 기능 개발 전용
+  - dev : 마이너한 수정사항
+
+Clone, Pull, Push
+- Clone : 외부에서 받는 것
+- Pull : 이미 Clone 된 프로젝트를 업데이트 하는 것
+- Push : 새로운 수정사항을 올리는 것
+
+Staging
+
+- Pull Request
+
+1. dev 브랜치에 수정을 했다.
+2. main 브랜치에 반영을 해야 한다.
+3. 중간에 정우씨한테 Pull 받으라는 요청을 해야 한다.
+
+Merge
+
+----------
+
+main (index.html)
+  - dev (index.html)
+
+index.html
+#10 : 
+
+정우 :<div> </div>
+소망 : <ul><li></li></ul>
+
+<div></div>
+<ul><li></li></ul>
+
+dev -> dev : pull
+dev -> main : Pull Request
+
+정우 : dev (로직
+소망 : ui (퍼블
+
+1. 내가 직접 또 바꿨을 경우 : pull
+2. 
+- 소망 -> 커밋 -> ui -> PR -> main -> merge ->ui(main)
+- 정우 : PR 받고 -> main pull
+
+dev commit -> dev push -> PR -> merge -> main pull
